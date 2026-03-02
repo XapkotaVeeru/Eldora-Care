@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-charcoal font-sans antialiased;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
+
+/* Fix: Only apply to headings, don't include .font-serif in the list */
+h1, h2, h3, h4 {
+  @apply font-serif;
+}
